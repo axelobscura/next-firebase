@@ -24,7 +24,7 @@ const Post = () => {
         value={content.title}
         onChange={onChange}
       />
-      <label htmlFor="body">Title</label>
+      <label htmlFor="body">body</label>
       <textarea
         name="body"
         value={content.body}
