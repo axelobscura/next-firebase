@@ -1,9 +1,12 @@
 import Layout from '../components/layout';
-
+import Link from 'next/link'
+import { useEffect } from 'react'
 export default function Home() {
   return (
     <Layout>
-      <h1>test</h1>
+      <main>
+        <h1 className="title">Firebase Client-Side</h1>
+      </main>
     </Layout>
   )
 }
