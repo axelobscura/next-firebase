@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <Layout>
       <main>
-        <h1 className="title">Firebase Client-Side</h1>
+        <h1 className="title">FIREBASE</h1>
       </main>
     </Layout>
   )
