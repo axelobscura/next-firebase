@@ -14,6 +14,7 @@ export default function Layout({children}){
       </main>
 
       <footer className={styles.footer}>
+        test
       </footer>
     </div>
   )
