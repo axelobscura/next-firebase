@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-export default function Layout({children}){
+function Layout({children}){
   return(
     <div className={styles.container}>
       <Head>
@@ -18,4 +18,6 @@ export default function Layout({children}){
       </footer>
     </div>
   )
-} 
+};
+
+export default Layout;
