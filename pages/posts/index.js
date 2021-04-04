@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import db from '../../utils/db';
+import Contenedor from '../../components/Contenedor'
 
 const Posts = (props) => {
   const { entriesData } = props;
 
   return (
-    <div>
+    <Contenedor>
       <h1>Posts</h1>
       {entriesData.map(entry => (
         <div key={entry.id}>
@@ -15,7 +16,7 @@ const Posts = (props) => {
           <br />
         </div>
       ))}
-    </div>
+    </Contenedor>
   );
 };
 

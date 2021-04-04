@@ -1,25 +1,26 @@
 import { useRouter } from 'next/router'
 import db from '../../utils/db';
+import Contenedor from '../../components/Contenedor'
 
 const Post = (props) => {
   const { entry } = props;
   const router = useRouter()
   if (router.isFallback) {
     return (
-      <div>loading</div>
+      <Contenedor>loading</Contenedor>
     )
   } else {
     if (entry) {
       return (
-        <div>
+        <Contenedor>
           <h1>{entry.title}</h1>
           <h4>{entry.created}</h4>
           <p>{entry.body}</p>
-        </div>
+        </Contenedor>
       );
     } else {
       return (
-        <div>not found</div>
+        <Contenedor>not found</Contenedor>
       )
     }
   }
