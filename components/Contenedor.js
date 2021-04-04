@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
-function Layout({children}){
+function Contenedor({children}){
   return(
     <div className={styles.container}>
       <Head>
@@ -20,4 +20,4 @@ function Layout({children}){
   )
 };
 
-export default Layout;
+export default Contenedor;
