@@ -19,3 +19,30 @@ main.entrada {
   padding: 0;
   margin: 0;
 }
+
+form.datos {
+  text-align: left;
+}
+
+form.datos div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 5px 15px;
+}
+
+.form-label {
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  form.datos div {
+    width: 100%;
+    flex-direction: column;
+  }
+  form.datos div {
+    margin: 5px;
+  }
+}
