@@ -23,6 +23,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .footer img {
@@ -33,6 +34,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  padding: 0;
 }
 
 .title a {

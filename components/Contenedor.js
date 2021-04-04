@@ -5,7 +5,7 @@ function Contenedor({children}){
   return(
     <div className={styles.container}>
       <Head>
-        <title>FIREBASE APP TEST</title>
+        <title>INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -14,7 +14,8 @@ function Contenedor({children}){
       </main>
 
       <footer className={styles.footer}>
-        test
+        <p>Instituto Mexicano del Cemento y del Concreto A.C.</p>
+        <p><small>Av. Insurgentes Sur # 1846 Col. Florida, C.P. 01030, México, CDMX.</small></p>
       </footer>
     </div>
   )
