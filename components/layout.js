@@ -5,7 +5,7 @@ export default function Layout({children}){
   return(
     <div className={styles.container}>
       <Head>
-        <title>FIREBASE APP</title>
+        <title>FIREBASE APP TEST</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
