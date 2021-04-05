@@ -407,6 +407,161 @@ export default function EvaluacionEstrutural() {
           </Form.Row>
 
           <hr/>
+          <h2><span className="lnr lnr-plus-circle"></span> Características de la estructura:</h2>
+          <hr/>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>No. de niveles: </Form.Label>
+              <Form.Control type="text" placeholder="n" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Año de construcción: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Área del terreno: </Form.Label>
+              <Form.Control type="text" placeholder="m2" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>No. de sotanos: </Form.Label>
+              <Form.Control type="text" placeholder="n" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Año rehabilitación: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Recarga acuíferos: </Form.Label>
+              <Form.Control type="text" placeholder="m2" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="apendices"
+                label="Apéndices en azotea (escaleras/elevador/cuarto azotea)"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="mezanine"
+                label="Mezanine (losa intermedia que no cubre toda la planta)"
+              />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="piso"
+                label="Piso a media altura (de los entrepisos tipo)"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="escalera"
+                label="Escalera externa"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="semisotano"
+                label="Semisótano (primer sótano a medio nivel de calle)"
+              />
+            </Form.Group>
+          </Form.Row>
+
+          <hr/>
+          <h5>Instalaciones:</h5>
+          <hr/>
+
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="elevador"
+                label="Elevador"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="agua"
+                label="Agua potable"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="gas"
+                label="Gas"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="electrica"
+                label="Eléctrica"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="alcantarillado"
+                label="Alcantarillado"
+              />
+            </Form.Group>
+          </Form.Row>
+
+          <hr/>
+          <h5>Dimensiones Generales:</h5>
+          <hr/>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>X = Frente: </Form.Label>
+              <Form.Control type="text" placeholder="n" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Y = Fondo: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Altura Planta Baja: </Form.Label>
+              <Form.Control type="text" placeholder="m2" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Altura entrepisos: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>No. de cajones de estacionamiento: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>No. de elevadores: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr/>
+          <h2><span className="lnr lnr-plus-circle"></span> Vulnerabilidad:</h2>
+          <hr/>
+
+          <hr/>
           <Button variant="dark" type="submit" className="float-right">
             ENVIAR DATOS
           </Button>

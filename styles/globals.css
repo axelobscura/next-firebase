@@ -37,6 +37,10 @@ form.datos div {
   white-space: nowrap;
 }
 
+h2 {
+  font-weight: bold;
+}
+
 input[type="radio"] {
   width: 25px;
 }
