@@ -52,6 +52,17 @@ export default function EvaluacionEstrutural() {
               <Form.Control />
             </Form.Group>
           </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Nombre del edificio/cuerpo/área:<br/><small>(usar un formato por cada edificio/cuerpo/área)</small></Form.Label>
+              <Form.Control />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Coordenadas</Form.Label>
+              <Form.Control />
+            </Form.Group>
+          </Form.Row>
           
           <Button variant="dark" type="submit" className="float-right">
             ENVIAR DATOS
