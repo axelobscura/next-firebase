@@ -561,6 +561,30 @@ export default function EvaluacionEstrutural() {
           <h2><span className="lnr lnr-plus-circle"></span> Vulnerabilidad:</h2>
           <hr/>
 
+          <Form.Row>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="esquina"
+                label="Esquina"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="medio"
+                label="Medio"
+              />
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Check 
+                type="switch"
+                id="aislado"
+                label="Aislado"
+              />
+            </Form.Group>
+          </Form.Row>
+
           <hr/>
           <Button variant="dark" type="submit" className="float-right">
             ENVIAR DATOS
