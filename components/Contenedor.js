@@ -8,6 +8,7 @@ function Contenedor({children}){
         <title>INSTITUTO MEXICANO DEL CEMENTO Y DEL CONCRETO</title>
         <link rel="icon" href="/favicon.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"></link>
       </Head>
 
       <main className={styles.main}>

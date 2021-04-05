@@ -37,6 +37,10 @@ form.datos div {
   white-space: nowrap;
 }
 
+input[type="radio"] {
+  width: 25px;
+}
+
 @media (max-width: 600px) {
   form.datos div {
     width: 100%;

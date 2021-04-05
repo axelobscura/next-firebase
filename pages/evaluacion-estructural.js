@@ -15,6 +15,9 @@ export default function EvaluacionEstrutural() {
   return (
     <Contenedor>
       <main className="entrada">
+        <div align="center">
+          <img src="/logo_imcyc.png" alt="instituto mexicano del cemento y del concreto - evaluación estructural" title="instituto mexicano del cemento y del concreto - evaluación estructural" style={{width: '190px',marginBottom: '20px'}} />
+        </div>
         <h1 className="title">FORMATO DE CAPTURA DE DATOS PARA EVALUACIÓN ESTRUCTURAL</h1>
         <hr />
         <Form onSubmit={enviarDatos} className="datos">
@@ -50,7 +53,8 @@ export default function EvaluacionEstrutural() {
             </Form.Group>
           </Form.Row>
 
-          <h2>Información general del inmueble:</h2>
+          <hr/>
+          <h2><span className="lnr lnr-plus-circle"></span> Información general del inmueble:</h2>
           <hr/>
 
           <Form.Row>
@@ -145,7 +149,264 @@ export default function EvaluacionEstrutural() {
               <Form.Control type="text" />
             </Form.Group>
           </Form.Row>
+
+          <hr/>
+          <h2><span className="lnr lnr-plus-circle"></span> Uso:</h2>
+          <p><small>(Anotar % de área para cada uso, debo sumar 100%)</small></p>
+          <hr/>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">1.Habitacional</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Vivienda</option>
+                  <option>Multifamiliar</option>
+                  <option>Hotel</option>
+                  <option>Dormitorio</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">2.Oficinas/Comercio</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Oficinas</option>
+                  <option>Tienda</option>
+                  <option>Mercado</option>
+                  <option>Restaurante</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">3.Educativo</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Preescolar</option>
+                  <option>Primaria</option>
+                  <option>Secundaria</option>
+                  <option>Superior</option>
+                  <option>Biblioteca</option>
+                  <option>Museo</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">4.Salud/Social</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Hospital</option>
+                  <option>Clínica</option>
+                  <option>Asilo</option>
+                  <option>Estancia infantil</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">5.Reunión</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Centro social</option>
+                  <option>Templo religioso</option>
+                  <option>Gimnasio</option>
+                  <option>Salón baile/juego</option>
+                  <option>Cine/Teatro/Auditorio</option>
+                  <option>Estadio</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">6.Industrial</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Fábrica</option>
+                  <option>Taller</option>
+                  <option>Bodega</option>
+                  <option>Generac. eléctrica</option>
+                  <option>Combustibles</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">7.Comunicaciones y transportes</h3>
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridState">
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Terminal de pasajeros</option>
+                  <option>Terminal de carga</option>
+                  <option>Estacionamiento</option>
+                  <option>Aeropuerto/Puerto</option>
+                  <option>Correo/Telégrafo/Teléfono</option>
+                  <option>Radio/Televisión</option>
+                  <option>Antena y transmisora</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Label>Procentaje: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
           
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Otro: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={2}>
+              <h3 className="w-100">Ocupación</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Habitada/en uso</option>
+                  <option>Abandonada/desocupada</option>
+                  <option>Desalojada por daños</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Número de ocupantes: </Form.Label>
+              <Form.Control type="number" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr/>
+          <h2><span className="lnr lnr-plus-circle"></span> Terreno y cimentación:</h2>
+          <hr/>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">Topografía</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Planicie</option>
+                  <option>Ladera de cerro</option>
+                  <option>Rivera río/lago</option>
+                  <option>Fondo de valle</option>
+                  <option>Depósitos lacustres</option>
+                  <option>Costa</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">Tipo de suelo</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Arcilla muy blanda</option>
+                  <option>Limos o arcillas</option>
+                  <option>Granular suelto</option>
+                  <option>Granular compacto</option>
+                  <option>Roca</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">Suelo</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Blando</option>
+                  <option>Transición</option>
+                  <option>Firma</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">Cimentación superficial</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Zapatas aisladas</option>
+                  <option>Zapatas corridas</option>
+                  <option>Cimiento de piedra</option>
+                  <option>Losa</option>
+                  <option>Cajón</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} xs={3}>
+              <h3 className="w-100">Cimentación profunda</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                  <option>Pilotes/pilas</option>
+                  <option>Otro</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Nivel freático: </Form.Label>
+              <Form.Control type="text" placeholder="m" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Pendiente del terreno: </Form.Label>
+              <Form.Control type="text" placeholder="%" />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Distancia a río/lago/mar: </Form.Label>
+              <Form.Control type="text" placeholder="m" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr/>
           <Button variant="dark" type="submit" className="float-right">
             ENVIAR DATOS
           </Button>
