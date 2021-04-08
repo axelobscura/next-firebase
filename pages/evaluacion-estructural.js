@@ -3,6 +3,7 @@ import Contenedor from '../components/Contenedor';
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Col from 'react-bootstrap/Col'
+import CanvasDraw from "react-canvas-draw";
 
 export default function EvaluacionEstrutural() {
 
@@ -954,6 +955,20 @@ export default function EvaluacionEstrutural() {
               <Form.Control type="text" />
             </Form.Group>
           </Form.Row>
+
+
+          <hr />
+          <h2><span className="lnr lnr-plus-circle"></span> Croquis del inmueble:</h2>
+          <hr />
+
+          <CanvasDraw
+            style={{
+              boxShadow:
+                "0 13px 27px -5px rgba(50, 50, 93, 0.25),    0 8px 16px -8px rgba(0, 0, 0, 0.3)",
+                width:"100%",
+                height:"500px"
+            }}
+          />
 
           <hr />
           <Link href="/resultados">
