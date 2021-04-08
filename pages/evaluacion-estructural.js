@@ -804,6 +804,42 @@ export default function EvaluacionEstrutural() {
           <hr />
 
           <hr />
+          <h4><b>Columnas</b></h4>
+          <hr />
+
+          <Form.Row>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Forma</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Material</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Sección: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr />
           <Button variant="dark" type="submit" className="float-right">
             ENVIAR DATOS
           </Button>
