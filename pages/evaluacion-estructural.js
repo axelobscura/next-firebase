@@ -956,9 +956,11 @@ export default function EvaluacionEstrutural() {
           </Form.Row>
 
           <hr />
-          <Button variant="dark" type="submit" className="float-right">
-            ENVIAR DATOS
-          </Button>
+          <Link href="/resultados">
+            <button className="float-right btn btn-dark">
+              ENVIAR DATOS
+            </button>
+          </Link>
         </Form>
       </main>
     </Contenedor>
