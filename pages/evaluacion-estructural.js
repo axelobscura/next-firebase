@@ -157,10 +157,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">1.Habitacional</h3>
+              <p className="w-100">1.Habitacional</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+                <option>No aplica</option>
                 <option>Vivienda</option>
                 <option>Multifamiliar</option>
                 <option>Hotel</option>
@@ -175,10 +176,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">2.Oficinas/Comercio</h3>
+              <p className="w-100">2.Oficinas/Comercio</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Oficinas</option>
                 <option>Tienda</option>
                 <option>Mercado</option>
@@ -193,10 +195,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">3.Educativo</h3>
+              <p className="w-100">3.Educativo</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Preescolar</option>
                 <option>Primaria</option>
                 <option>Secundaria</option>
@@ -213,10 +216,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">4.Salud/Social</h3>
+              <p className="w-100">4.Salud/Social</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Hospital</option>
                 <option>Clínica</option>
                 <option>Asilo</option>
@@ -231,10 +235,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">5.Reunión</h3>
+              <p className="w-100">5.Reunión</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Centro social</option>
                 <option>Templo religioso</option>
                 <option>Gimnasio</option>
@@ -251,10 +256,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">6.Industrial</h3>
+              <p className="w-100">6.Industrial</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Fábrica</option>
                 <option>Taller</option>
                 <option>Bodega</option>
@@ -270,10 +276,11 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">7.Comunicaciones y transportes</h3>
+              <p className="w-100">7.Comunicaciones y transportes</p>
             </Form.Group>
             <Form.Group as={Col} controlId="formGridState">
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Terminal de pasajeros</option>
                 <option>Terminal de carga</option>
                 <option>Estacionamiento</option>
@@ -302,6 +309,7 @@ export default function EvaluacionEstrutural() {
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Control as="select" defaultValue="Choose...">
+              <option>No aplica</option>
                 <option>Habitada/en uso</option>
                 <option>Abandonada/desocupada</option>
                 <option>Desalojada por daños</option>
@@ -587,7 +595,7 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">Irregularidad en planta</h3>
+              <h3 className="w-100"><span class="lnr lnr-arrow-right-circle"></span> Irregularidad en planta</h3>
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Control as="select" defaultValue="Choose...">
@@ -602,7 +610,7 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">Irregularidad en elevación</h3>
+              <h3 className="w-100"><span class="lnr lnr-arrow-right-circle"></span> Irregularidad en elevación</h3>
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Control as="select" defaultValue="Choose...">
@@ -620,7 +628,7 @@ export default function EvaluacionEstrutural() {
 
           <Form.Row>
             <Form.Group as={Col} xs={3}>
-              <h3 className="w-100">Otras fuentes de vulnerabilidad</h3>
+              <h3 className="w-100"><span class="lnr lnr-arrow-right-circle"></span> Otras fuentes de vulnerabilidad</h3>
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Control as="select" defaultValue="Choose...">
@@ -669,7 +677,7 @@ export default function EvaluacionEstrutural() {
           <h2><span className="lnr lnr-plus-circle"></span> Sistema estructural:</h2>
           <hr />
 
-          <h3>Material en muros</h3>
+          <h3><span class="lnr lnr-arrow-right-circle"></span> Material en muros</h3>
 
           <Form.Row>
             <Form.Group as={Col}>
@@ -765,7 +773,7 @@ export default function EvaluacionEstrutural() {
           </Form.Row>
 
           <hr />
-          <h3>Resfuerzo en la mampostería</h3>
+          <h3><span class="lnr lnr-arrow-right-circle"></span> Resfuerzo en la mampostería</h3>
           <hr />
 
           <Form.Row>
@@ -800,11 +808,11 @@ export default function EvaluacionEstrutural() {
           </Form.Row>
 
           <hr />
-          <h3>Sección de elementos predominantes</h3>
+          <h3><span class="lnr lnr-arrow-right-circle"></span> Sección de elementos predominantes</h3>
           <hr />
 
           <hr />
-          <h4><b>Columnas</b></h4>
+          <h4><b><span class="lnr lnr-arrow-right"></span> Columnas</b></h4>
           <hr />
 
           <Form.Row>
@@ -821,6 +829,114 @@ export default function EvaluacionEstrutural() {
             </Form.Group>
             <Form.Group as={Col} xs={1}>
               <h3 className="w-100">Material</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Sección: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr />
+          <h4><b><span class="lnr lnr-arrow-right"></span> Trabes principales</b></h4>
+          <hr />
+
+          <Form.Row>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Forma:</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Material:</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Sección: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr />
+          <h4><b><span class="lnr lnr-arrow-right"></span> Trabes secundarias</b></h4>
+          <hr />
+
+          <Form.Row>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Forma:</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Material:</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+          </Form.Row>
+
+          <Form.Row>
+            <Form.Group as={Col} controlId="formGridCity">
+              <Form.Label>Sección: </Form.Label>
+              <Form.Control type="text" />
+            </Form.Group>
+          </Form.Row>
+
+          <hr />
+          <h4><b><span class="lnr lnr-arrow-right"></span> Diagonales</b></h4>
+          <hr />
+
+          <Form.Row>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Forma:</h3>
+            </Form.Group>
+            <Form.Group as={Col}>
+              <Form.Control as="select" defaultValue="Choose...">
+                <option>Conexión excéntrica trabe-columna</option>
+                <option>Péndulo invertido/una sola hilera de columnas</option>
+                <option>Un elemento resiste más del 35% del sismo</option>
+                <option>Columna débil-viga fuerte</option>
+              </Form.Control>
+            </Form.Group>
+            <Form.Group as={Col} xs={1}>
+              <h3 className="w-100">Material:</h3>
             </Form.Group>
             <Form.Group as={Col}>
               <Form.Control as="select" defaultValue="Choose...">
