@@ -11,7 +11,7 @@ export default function Home() {
         </div>
         <h1 className="title mb-4">EVALUACIÓN ESTRUCTURAL</h1>
         <Link href="evaluacion-estructural">
-          <Button variant="dark">REALIZAR EVALUACIÓN</Button>
+          <Button variant="dark">REALIZAR EVALUACIÓN ESTRUCTURAL</Button>
         </Link>
       </main>
     </Contenedor>
