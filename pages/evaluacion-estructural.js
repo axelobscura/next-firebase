@@ -54,10 +54,10 @@ export default function EvaluacionEstrutural() {
             </Form.Group>
           </Form.Row>
 
-          <hr />
+          <qhr />
           <h2><span className="lnr lnr-plus-circle"></span> Información general del inmueble:</h2>
-          <hr />
-
+          <hr />[]
+<>
           <Form.Row>
             <Form.Group as={Col} controlId="formGridCity">
               <Form.Label>Nombre del inmueble: </Form.Label>
